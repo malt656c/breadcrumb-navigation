@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: hsl(219, 58%, 27%);
+}
+div {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 0.25rem;
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+  color: rgb(145, 183, 255);
+}
+a:hover {
+  text-decoration: underline;
+}
+span {
+  color: white;
+}
+li::before {
+  content: "/";
+  margin-inline: 0.25rem;
+  color: white;
+}
+li:first-child::before {
+  content: "";
+}
+button {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  outline: 3px solid white;
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+button:hover {
+  scale: 1.05;
+}
